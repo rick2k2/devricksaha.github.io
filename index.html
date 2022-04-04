@@ -8,7 +8,10 @@
   <title>Rick Saha | Protfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  
+  <!-- favicon linking here -->
+  <link rel="Shortcout icon" href="assets/img/ricksahalogo.png" type="image-xicon">
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -26,7 +29,11 @@
 </head>
 
 <body>
-
+<!-- preloader here -->
+  <div class="loader_bg">
+    <div class="loader"></div>
+  </div>
+  
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
@@ -790,7 +797,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  
+   <!-- jquery library and loader timeout-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    setTimeout(function(){
+      $('.loader_bg').fadeToggle();
+    },3000);
+  </script>
 </body>
 
 </html>
